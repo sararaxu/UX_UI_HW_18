@@ -76,3 +76,92 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.flexChild{
+    width:33%;
+    margin:30px;
+    background-color: lightslategray;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.iconImage{
+    width: 120px;
+}
+
+.myskills{
+    text-align: center;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items:center;
+    margin: 20px
+}
+
+.image-item img{
+    width: 100px;
+
+}
+
+.image-item{
+    align-items: center;
+}
+
+.myWork{
+    text-align: center;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
+.text-item{
+    background-color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.text-item button{
+    background-color:lightskyblue;
+    padding:8px 20px;
+    color:white;
+    border-radius: 16px;
+    border: 2px;
+    font-size: 14px;
+    text-align:start;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .workGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;
+        align-items:center;
+        margin: 20px;
+    }
+
+    .flexChild{
+        width:90%;
+        margin:30px;
+        background-color: lightslategray;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+}
